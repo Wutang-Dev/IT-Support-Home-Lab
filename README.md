@@ -52,9 +52,9 @@ This lab focuses on:
 
 ## 4️⃣ Configured Static IP Address
 
-![Static IP 1](Screenshots/Day01-05-Configuring-Static-IP-1.png)
-![Static IP 2](Screenshots/Day01-06-Configuring-Static-IP-2.png)
-![Static IP 3](Screenshots/Day01-07-Assigning-Static-IP-3.png)
+![Static IP 1](Screenshots/Day01-05-Configuring-Static-Ip-1)
+![Static IP 2](Screenshots/Day01-06-Configuring-Static-Ip-2)
+![Static IP 3](Screenshots/Day01-07-Assigning-Static-Ip-3)
 
 ---
 
