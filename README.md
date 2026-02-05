@@ -52,21 +52,21 @@ This lab focuses on:
 
 ## 4️⃣ Configured Static IP Address
 
-![Static IP 1](Screenshots/Day01-05-Configuring-Static-IP1.png)
-![Static IP 2](Screenshots/Day01-06-Configuring-Static-IP2.png)
-![Static IP 3](Screenshots/Day01-07-Assigning-Static-IP3.png)
+![Static IP 1](Screenshots/Day01-05-Configuring-Static-IP-1.png)
+![Static IP 2](Screenshots/Day01-06-Configuring-Static-IP-2.png)
+![Static IP 3](Screenshots/Day01-07-Assigning-Static-IP-3.png)
 
 ---
 
 ## 5️⃣ Installed Active Directory Domain Services Role
 
-![AD Install 1](Screenshots/Day01-08-Installing-Active-Directory1.png)
-![AD Install 2](Screenshots/Day01-08-Installing-Active-Directory2.png)
-![AD Install 3](Screenshots/Day01-08-Installing-Active-Directory3.png)
-![AD Install 4](Screenshots/Day01-08-Installing-Active-Directory4.png)
-![AD Install 5](Screenshots/Day01-09-Installing-Active-Directory5.png)
-![AD Install 6](Screenshots/Day01-10-Installing-Active-Directory6.png)
-![AD Install Final](Screenshots/Day01-11-Installing-Active-Directory10.png)
+![AD Install 1](Screenshots/Day01-08-Installing-Active-Directory-1.png)
+![AD Install 2](Screenshots/Day01-08-Installing-Active-Directory-2.png)
+![AD Install 3](Screenshots/Day01-08-Installing-Active-Directory-3.png)
+![AD Install 4](Screenshots/Day01-08-Installing-Active-Directory-4.png)
+![AD Install 5](Screenshots/Day01-09-Installing-Active-Directory-5.png)
+![AD Install 6](Screenshots/Day01-10-Installing-Active-Directory-6.png)
+![AD Install Final](Screenshots/Day01-11-Installing-Active-Directory-10.png)
 
 ---
 
