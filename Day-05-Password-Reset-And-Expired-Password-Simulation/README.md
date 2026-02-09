@@ -73,7 +73,7 @@ Helpdesk sets:
 
 ☑ User must change password at next logon
 
-![Force Password Reset](screenshots/5-User-Must-Change-Their-Password-Before-Signin.png)
+![Force Password Reset](screenshots/5-User-Must-Change-Their-Password-Befor-Signing-In.png)
 
 ---
 
