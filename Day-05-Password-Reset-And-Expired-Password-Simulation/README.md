@@ -22,19 +22,19 @@ Simulate a real-world Helpdesk scenario involving:
 
 # 🔹 Scenario 1 – User Changes Password
 
-### Step 1 – Initial Password Change Attempt
+## Step 1 – Initial Password Change Attempt
+
 User initiates password change.
 
-📸 Screenshot:
-`screenshots/1-Change-Password.png`
+![Initial Password Change](screenshots/1-Change-Password.png)
 
 ---
 
-### Step 2 – Password Successfully Updated
+## Step 2 – Password Successfully Updated
+
 Password change processed successfully.
 
-📸 Screenshot:
-`screenshots/2-Change-Password.png`
+![Password Updated](screenshots/2-Change-Password.png)
 
 ---
 
@@ -42,55 +42,54 @@ Password change processed successfully.
 
 To simulate a real Helpdesk ticket, incorrect passwords were entered multiple times.
 
-### Step 3 – Account Locked
+## Step 3 – Account Locked
+
 User receives lockout message after exceeding threshold.
 
-📸 Screenshot:
-`screenshots/3-Account-Lockout.png`
+![Account Locked](screenshots/3-Account-Lockout.png)
 
 ---
 
 # 🔹 Scenario 3 – Helpdesk Unlocks Account
 
-### Step 4 – Unlock Account in Active Directory
+## Step 4 – Unlock Account in Active Directory
 
-Steps:
-1. Open Active Directory Users and Computers
+Steps performed:
+1. Open **Active Directory Users and Computers**
 2. Locate user
-3. Open Properties
-4. Unlock account checkbox
+3. Open **Properties**
+4. Unlock account checkbox selected
 5. Apply changes
 
-📸 Screenshot:
-`screenshots/4-Account-Unlock-In-Active-Directory.png`
+![Unlock Account in AD](screenshots/4-Account-Unlock-In-Active-Directory.png)
 
 ---
 
 # 🔹 Scenario 4 – Force Password Reset
 
-### Step 5 – User Must Change Password at Next Logon
+## Step 5 – User Must Change Password at Next Logon
 
 Helpdesk sets:
+
 ☑ User must change password at next logon
 
-📸 Screenshot:
-`screenshots/5-User-Must-Change-Their-Password-Before-Signin.png`
+![Force Password Reset](screenshots/5-User-Must-Change-Their-Password-Before-Signin.png)
 
 ---
 
-### Step 6 – User Changes Password Before Login
+## Step 6 – User Changes Password Before Login
+
 User is prompted to create a new password.
 
-📸 Screenshot:
-`screenshots/6-Change-Users-Password-Before-Login.png`
+![User Changes Password Before Login](screenshots/6-Change-Users-Password-Before-Login.png)
 
 ---
 
-### Step 7 – Password Successfully Changed
+## Step 7 – Password Successfully Changed
+
 User login successful.
 
-📸 Screenshot:
-`screenshots/7-Password-changed.png`
+![Password Successfully Changed](screenshots/7-Password-changed.png)
 
 ---
 
@@ -120,6 +119,3 @@ User login successful.
 # ✅ Outcome
 
 User access restored successfully after account lockout and password reset procedure.
-
----
-
