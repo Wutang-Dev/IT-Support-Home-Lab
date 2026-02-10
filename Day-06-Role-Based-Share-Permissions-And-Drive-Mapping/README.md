@@ -72,7 +72,7 @@ This lab demonstrates practical Active Directory and file server administration.
 ![Add Tyson 2](screenshots/8-Add-Tyson-To-Finance-Users-2.png)
 
 ## 3.3 Remove Ali from All Users (Cleanup Step)
-![Remove Ali](screenshots/11-Remove-Ali-Users.png)
+![Remove Ali](screenshots/11-Remove-All-Users.png)
 
 ---
 
@@ -96,16 +96,16 @@ This lab demonstrates practical Active Directory and file server administration.
 ### Assign Sales-Users Modify Access
 ![Sales Permission 1](screenshots/12-Giving-Sales-Users-Permission-To-The-Drive-1.png)
 ![Sales Permission 2](screenshots/12-Giving-Sales-Users-Permission-To-The-Drive-2.png)
-![Sales Permission 3](screenshots/12-Giving-Sales-Users-Permission-To-The-Drive-3.png)
+![Sales Permission 3](screenshots/12-Giving-Sales-Users-Permission-To-The-Drive-Complete.png)
 
 ---
 
 ## 🔐 Finance Folder Permissions
 
 ### Assign Finance-Users Modify Access
-![Finance Permission 1](screenshots/14-Finance-Share-Permissions-1.png)
-![Finance Permission 2](screenshots/14-Finance-Share-Permissions-2.png)
-![Finance Permission 3](screenshots/14-Finance-Share-Permissions-3.png)
+![Finance Permission 1](screenshots/14-Finance-Share-Permisions-1.png)
+![Finance Permission 2](screenshots/14-Finance-Share-Permisions-2.png)
+![Finance Permission 3](screenshots/14-Finance-Share-Permisions-3.png)
 
 ---
 
@@ -130,7 +130,7 @@ This lab demonstrates practical Active Directory and file server administration.
 ![Tyson Sales Denied](screenshots/19-Tyson-Access-Sales-Denied.png)
 
 ### 6.5 Finance Access – SUCCESS
-![Tyson Finance Success](screenshots/18-Tyson-Access-Finance-Success.png)
+![Tyson Finance Success](screenshots/18-Tyson-Access-Finance-Sucess.png)
 
 ### 6.6 Finance Drive Mapped
 ![Tyson Finance Drive Mapped](screenshots/20-Tyson-Finance-Drive-Mapped.png)
