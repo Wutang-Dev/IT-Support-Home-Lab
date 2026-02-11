@@ -1,5 +1,15 @@
 # Day 07 – AD DNS Misconfiguration & Drive Mapping Failure (Root Cause Analysis)
 
+## 🧾 Executive Summary
+
+A mapped network drive failure occurred on CLIENT01 within the IT.Support.Lab domain environment.
+
+- Investigation revealed that DNS configuration was incorrectly assigned via router-based DHCP instead of the Domain Controller.
+
+- The issue was traced back to a Hyper-V virtual switch re-binding event following a physical switch relocation.
+
+- Correcting the DNS configuration restored full domain functionality and drive access.
+
 ---
 
 ## 🧠 Objective
@@ -41,7 +51,7 @@ Error displayed:
 
 Ali attempted to access the Sales drive and received an error.
 
-![Ali Reported Error](screenshots/1-Ali-reported-an-error-when-trying-to-access.png)
+![Ali Reported Error](screenshots/1-Ali-reported-an-error-when-trying-to-access-the-sales-drive.png)
 
 ---
 
@@ -54,7 +64,7 @@ Performed basic network checks:
 
 No mapped drives were actively listed.
 
-![Initial Troubleshooting](screenshots/2-Troubleshooting-ipconfig-and-net-use.png)
+![Initial Troubleshooting](screenshots/2-Troubleshooting-Ipconfig-and-net-use.png)
 
 ---
 
