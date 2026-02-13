@@ -26,7 +26,8 @@ Validate that **Mike Tyson (Finance)** can:
 
 
 
-This mirrors a real Helpdesk **post-incident validatio** workflow after an authentication  drive-mapping issue.
+This mirrors a real Helpdesk **post-incident validation** 
+- workflow after an authentication  drive-mapping issue.
 
 
 
@@ -84,7 +85,7 @@ This mirrors a real Helpdesk **post-incident validatio** workflow after an authe
 
 **Screenshot:**
 
-!\[1-Identify-The-Current-User](screenshots/1-Identify-The-Current-User.png)
+![1-Identify-The-Current-User](screenshots/1-Identify-The-Current-User.png)
 
 
 
