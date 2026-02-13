@@ -1,4 +1,4 @@
-\# Day 09 – Helpdesk Endpoint Validation Flow (Domain Login + Finance Drive Access)
+# Day 09 – Helpdesk Endpoint Validation Flow (Domain Login + Finance Drive Access)
 
 
 
@@ -6,47 +6,27 @@
 
 
 
-\## 🧠 Objective
+## 🧠 Objective
 
 
 
-Validate that \*\*Mike Tyson (Finance)\*\* can:
+Validate that **Mike Tyson (Finance)** can:
 
 
 
-\- Log in successfully using a \*\*domain account\*\*
+- Log in successfully using a **domain account**
 
-\- Confirm the endpoint is \*\*domain-joined\*\*
+- Confirm the endpoint is **domain-joined**
 
-\- Verify \*\*DNS + Domain Controller connectivity\*\*
+- Verify **DNS + Domain Controller connectivity**
 
-\- Confirm \*\*Group Policy\*\* applies correctly
+- Confirm **Group Policy** applies correctly
 
-\- Prove the endpoint is healthy after prior infrastructure changes
-
-
-
-This mirrors a real Helpdesk \*\*post-incident validation\*\* workflow after an authentication / drive-mapping issue.
+- Prove the endpoint is healthy after prior infrastructure changes
 
 
 
----
-
-
-
-\## 🏗 Lab Environment
-
-
-
-\- \*\*Domain:\*\* IT.Support.Lab  
-
-\- \*\*Domain Controller:\*\* DC01 (192.168.0.10)  
-
-\- \*\*User:\*\* IT.Support.Lab\\Mike.Tyson (Finance)  
-
-\- \*\*Client:\*\* CLIENT01 (Windows 11)  
-
-\- \*\*Context:\*\* User can log in + has Finance drive access ✅
+This mirrors a real Helpdesk **post-incident validatio** workflow after an authentication  drive-mapping issue.
 
 
 
@@ -54,35 +34,55 @@ This mirrors a real Helpdesk \*\*post-incident validation\*\* workflow after an 
 
 
 
-\## ✅ Validation Steps (Helpdesk Flow)
+## 🏗 Lab Environment
 
 
 
-\### 🔍 Step 1 – Identify the Current User
+- **Domain:** IT.Support.Lab  
+
+- **Domain Controller:** DC01 (192.168.0.10)  
+
+- **User:** IT.Support.Lab\\Mike.Tyson (Finance)  
+
+- **Client:** CLIENT01 (Windows 11)  
+
+- **Context:** User can log in + has Finance drive access ✅
 
 
 
-\*\*Command used:\*\*
-
-\- `whoami`
+---
 
 
 
-\*\*Purpose:\*\*
-
-\- Confirm the active user session
-
-\- Validate correct account context
+## ✅ Validation Steps (Helpdesk Flow)
 
 
 
-\*\*Expected Result:\*\*
-
-\- `it.support.lab\\mike.tyson`
+### 🔍 Step 1 – Identify the Current User
 
 
 
-\*\*Screenshot:\*\*
+**Command used:**
+
+- `whoami`
+
+
+
+**Purpose:**
+
+- Confirm the active user session
+
+- Validate correct account context
+
+
+
+**Expected Result:**
+
+- `it.support.lab\\mike.tyson`
+
+
+
+**Screenshot:**
 
 !\[1-Identify-The-Current-User](screenshots/1-Identify-The-Current-User.png)
 
@@ -92,61 +92,185 @@ This mirrors a real Helpdesk \*\*post-incident validation\*\* workflow after an 
 
 
 
-\### 🔐 Step 2 – Confirm Authentication Type (Domain vs Local)
+### 🔐 Step 2 – Confirm Authentication Type (Domain vs Local)
+
+
+
+**Command used:**
+
+- `whoami /fqdn`
+
+
+
+**Purpose:**
+
+- Validate domain-based authentication (Kerberos)
+
+- Confirm user is authenticated against AD services
+
+
+
+**Screenshot:**
+
+![2-Confirmation-Authentication-Type](screenshots/2-Confirmation-Authentication-Type.png)
+
+
+
+---
+
+
+
+### 🖥 Step 3 – GUI Domain Confirmation
+
+
+
+**Verification path:**
+
+- This PC → Properties → Domain or Workgroup
+
+
+
+**Purpose:**
+
+- Confirm machine is domain joined
+
+- Validate endpoint management status
+
+
+
+**Expected Result:**
+
+- **Domain:** IT.Support.Lab
+
+
+
+**Screenshot:**
+
+![3-GUI-Confirmation](screenshots/3-GUI-Confirmation.png)
+
+
+
+---
+
+
+
+### 🧾 Step 4 – Command-Line Domain Check
+
+
+
+**Command used:**
+
+- `systeminfo | findstr /B /C:"Domain"`
+
+
+
+**Purpose:**
+
+- Confirm domain membership via CLI
+
+- Demonstrate an alternate validation method used in Helpdesk workflows
+
+
+
+**Screenshot:**
+
+![4-Command-Line-Domain-Check](screenshots/4-Command-Line-Domain-Check.png)
+
+
+
+---
+
+
+
+### 🌐 Step 5 – Check DNS Resolution
+
+
+
+**Command used:**
+
+- `nslookup dc01`
+
+
+
+**Purpose:**
+
+- Verify DNS resolution is working correctly
+
+- Ensure domain services can be located
+
+
+
+**Expected Result:**
+
+- `dc01.IT.Support.Lab → 192.168.0.10`
+
+
+
+**Screenshot:**
+
+![5-Check-DNS-Resolution](screenshots/5-Check-DNS-Resolution.png)
+
+
+
+---
+
+
+
+### 📡 Step 6 – Check Domain Controller Reachability
+
+
+
+**Command used:**
+
+- `ping dc01`
+
+
+
+**Purpose:**
+
+- Confirm network path to Domain Controller
+
+- Validate basic connectivity
+
+
+
+**Screenshot:**
+
+![6-Check-Domain-Controller-Reachability](screenshots/6-Check-Domain-Controller-Reachability.png)
+
+
+
+---
+
+
+
+### 🏢 Step 7 – Group Policy Verification
 
 
 
 \*\*Command used:\*\*
 
-\- `whoami /fqdn`
+- `gpresult /r`
 
 
 
-\*\*Purpose:\*\*
+**Purpose:**
 
-\- Validate domain-based authentication (Kerberos)
+- Confirm Group Policy is applying successfully
 
-\- Confirm user is authenticated against AD services
-
-
-
-\*\*Screenshot:\*\*
-
-!\[2-Confirmation-Authentication-Type](screenshots/2-Confirmation-Authentication-Type.png)
+- Validate the machine is managed by domain policies
 
 
 
----
+**Screenshot 1:**
+
+![7-Group-Policy-Check-1](screenshots/7-Group-Policy-Check-1.png)
 
 
 
-\### 🖥 Step 3 – GUI Domain Confirmation
+**Screenshot 2:**
 
-
-
-\*\*Verification path:\*\*
-
-\- This PC → Properties → Domain or Workgroup
-
-
-
-\*\*Purpose:\*\*
-
-\- Confirm machine is domain joined
-
-\- Validate endpoint management status
-
-
-
-\*\*Expected Result:\*\*
-
-\- \*\*Domain:\*\* IT.Support.Lab
-
-
-
-\*\*Screenshot:\*\*
-
-!\[3-GUI-Confirmation](screenshots/3-GUI-Confirmation.png)
+![7-Group-Policy-Check-2](screenshots/7-Group-Policy-Check-2.png)
 
 
 
@@ -154,61 +278,27 @@ This mirrors a real Helpdesk \*\*post-incident validation\*\* workflow after an 
 
 
 
-\### 🧾 Step 4 – Command-Line Domain Check
+### 👤 Step 8 – Local Account Comparison (Awareness Check)
 
 
 
-\*\*Command used:\*\*
+**Purpose:**
 
-\- `systeminfo | findstr /B /C:"Domain"`
+- Demonstrate the difference between local and domain authentication
 
-
-
-\*\*Purpose:\*\*
-
-\- Confirm domain membership via CLI
-
-\- Demonstrate an alternate validation method used in Helpdesk workflows
+- Helpdesk awareness check when diagnosing login / policy / access issues
 
 
 
-\*\*Screenshot:\*\*
+**Validation:**
 
-!\[4-Command-Line-Domain-Check](screenshots/4-Command-Line-Domain-Check.png)
-
-
-
----
+- Confirm account context is **domain-based**, not local
 
 
 
-\### 🌐 Step 5 – Check DNS Resolution
+**Screenshot:**
 
-
-
-\*\*Command used:\*\*
-
-\- `nslookup dc01`
-
-
-
-\*\*Purpose:\*\*
-
-\- Verify DNS resolution is working correctly
-
-\- Ensure domain services can be located
-
-
-
-\*\*Expected Result:\*\*
-
-\- `dc01.IT.Support.Lab → 192.168.0.10`
-
-
-
-\*\*Screenshot:\*\*
-
-!\[5-Check-DNS-Resolution](screenshots/5-Check-DNS-Resolution.png)
+![8-Local-Account-Check](screenshots/8-Local-Account-Check.png)
 
 
 
@@ -216,115 +306,25 @@ This mirrors a real Helpdesk \*\*post-incident validation\*\* workflow after an 
 
 
 
-\### 📡 Step 6 – Check Domain Controller Reachability
+## 🧠 Key Concepts Practiced
 
 
 
-\*\*Command used:\*\*
+- Domain vs Local Account Identification
 
-\- `ping dc01`
+- Kerberos Authentication Validation
 
+- Active Directory DNS Dependency
 
+- Domain Membership Verification (CLI + GUI)
 
-\*\*Purpose:\*\*
+- Domain Controller Connectivity Testing
 
-\- Confirm network path to Domain Controller
+- Group Policy Validation
 
-\- Validate basic connectivity
+- Endpoint Health Verification Workflow
 
-
-
-\*\*Screenshot:\*\*
-
-!\[6-Check-Domain-Controller-Reachability](screenshots/6-Check-Domain-Controller-Reachability.png)
-
-
-
----
-
-
-
-\### 🏢 Step 7 – Group Policy Verification
-
-
-
-\*\*Command used:\*\*
-
-\- `gpresult /r`
-
-
-
-\*\*Purpose:\*\*
-
-\- Confirm Group Policy is applying successfully
-
-\- Validate the machine is managed by domain policies
-
-
-
-\*\*Screenshot 1:\*\*
-
-!\[7-Group-Policy-Check-1](screenshots/7-Group-Policy-Check-1.png)
-
-
-
-\*\*Screenshot 2:\*\*
-
-!\[7-Group-Policy-Check-2](screenshots/7-Group-Policy-Check-2.png)
-
-
-
----
-
-
-
-\### 👤 Step 8 – Local Account Comparison (Awareness Check)
-
-
-
-\*\*Purpose:\*\*
-
-\- Demonstrate the difference between local and domain authentication
-
-\- Helpdesk awareness check when diagnosing login / policy / access issues
-
-
-
-\*\*Validation:\*\*
-
-\- Confirm account context is \*\*domain-based\*\*, not local
-
-
-
-\*\*Screenshot:\*\*
-
-!\[8-Local-Account-Check](screenshots/8-Local-Account-Check.png)
-
-
-
----
-
-
-
-\## 🧠 Key Concepts Practiced
-
-
-
-\- Domain vs Local Account Identification
-
-\- Kerberos Authentication Validation
-
-\- Active Directory DNS Dependency
-
-\- Domain Membership Verification (CLI + GUI)
-
-\- Domain Controller Connectivity Testing
-
-\- Group Policy Validation
-
-\- Endpoint Health Verification Workflow
-
-\- Helpdesk Post-Incident Validation Process
+- Helpdesk Post-Incident Validation Process
 
 
 
