@@ -333,21 +333,21 @@ This mirrors a real Helpdesk **post-incident validation**
 
 
 
-\## 🧩 Commands Used
+## 🧩 Commands Used
 
 
 
-\- `whoami`
+- `whoami`
 
-\- `whoami /fqdn`
+- `whoami /fqdn`
 
-\- `systeminfo | findstr /B /C:"Domain"`
+- `systeminfo | findstr /B /C:"Domain"`
 
-\- `nslookup dc01`
+- `nslookup dc01`
 
-\- `ping dc01`
+- `ping dc01`
 
-\- `gpresult /r`
+- `gpresult /r`
 
 
 
@@ -355,7 +355,7 @@ This mirrors a real Helpdesk **post-incident validation**
 
 
 
-\## 🏁 Outcome
+## 🏁 Outcome
 
 
 
@@ -363,27 +363,27 @@ Helpdesk validation confirmed:
 
 
 
-\- User logged in with \*\*domain credentials\*\*
+- User logged in with \*\*domain credentials\*\*
 
-\- Machine correctly joined to \*\*IT.Support.Lab\*\*
+- Machine correctly joined to \*\*IT.Support.Lab\*\*
 
-\- DNS resolving through \*\*Domain Controller\*\*
+- DNS resolving through \*\*Domain Controller\*\*
 
-\- Domain Controller reachable
+- Domain Controller reachable
 
-\- Group Policy applied successfully
+- Group Policy applied successfully
 
-\- Endpoint functioning as expected
+- Endpoint functioning as expected
 
 
 
-\*\*Endpoint Status:\*\* ✅ Healthy  
+**Endpoint Status:** ✅ Healthy  
 
-\*\*Domain Authentication:\*\* ✅ Verified  
+**Domain Authentication:** ✅ Verified  
 
-\*\*DNS Resolution:\*\* ✅ Operational  
+**DNS Resolution:** ✅ Operational  
 
-\*\*Policies Applied:\*\* ✅ Confirmed  
+**Policies Applied:** ✅ Confirmed  
 
 
 
@@ -391,7 +391,7 @@ Helpdesk validation confirmed:
 
 
 
-\## 💼 Helpdesk Portfolio Value
+## 💼 Helpdesk Portfolio Value
 
 
 
@@ -399,23 +399,23 @@ This lab demonstrates practical Helpdesk skills including:
 
 
 
-\- Endpoint verification methodology
+- Endpoint verification methodology
 
-\- Active Directory environment validation
+- Active Directory environment validation
 
-\- Structured validation checks (post-incident)
+- Structured validation checks (post-incident)
 
-\- Multi-layer verification (GUI + CLI)
+- Multi-layer verification (GUI + CLI)
 
-\- Domain authentication awareness
+- Domain authentication awareness
 
-\- Professional ticket closure workflow
+- Professional ticket closure workflow
 
 
 
-\*\*Lab Completed:\*\* Day 09  
+**Lab Completed:** Day 09  
 
-\*\*Focus Area:\*\* Helpdesk Endpoint Validation \& Domain Health Check
+**Focus Area:** Helpdesk Endpoint Validation & Domain Health Check
 
 
 
