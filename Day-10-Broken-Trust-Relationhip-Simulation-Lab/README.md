@@ -112,6 +112,7 @@ Screenshot:
 
 ![Logging Back Into Tyson's Account](screenshots/5-Logging-Back-Into-Tysons-Account.png)
 
+
 Validation command used:
 
 ```
