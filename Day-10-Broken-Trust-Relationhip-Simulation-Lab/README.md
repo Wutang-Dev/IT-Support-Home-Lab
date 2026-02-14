@@ -110,7 +110,7 @@ User successfully logged back into their domain account.
 
 Screenshot:
 
-![Logging Back Into Tyson's Account](screenshots/5-Logging-Back-Into-Tysons-Account.png)
+![Logging Back Into Tyson's Account](screenshots/5-tyson-login.png)
 
 
 Validation command used:
