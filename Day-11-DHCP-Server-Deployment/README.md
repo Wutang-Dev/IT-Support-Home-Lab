@@ -33,7 +33,7 @@ This lab demonstrates:
 
 ## 1. Create Internal Virtual Switch
 
-![Create Internal Switch](screenshots/1-Create-Internal-Switch.png)
+![Create Internal Switch](screenshots/1-Internal-Switch.png)
 
 ---
 
