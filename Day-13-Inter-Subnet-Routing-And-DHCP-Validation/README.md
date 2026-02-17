@@ -70,7 +70,7 @@
 
 ## 🔟 Move SALES01 to Workstations OU
 
-![Moved to Workstations OU](screenshots/9-Moved-Sales01-Workstation-OU.png)
+![Moved to Workstations OU](screenshots/9-Moved-Sales01-Worktation-OU.png)
 
 ---
 
