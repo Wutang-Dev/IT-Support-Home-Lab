@@ -61,7 +61,7 @@ Prohibit access to Control Panel and PC settings
 ```
 
 ![Prohibit Access Policy](screenshots/3-Prohibit-Access-To-Control-Panel.png)
-![Policy Enabled](screenshots/4-Prohibit-Access-To-Control-Panel-Enabled.png)
+![Policy Enabled](screenshots/4-Prohibit-Access-To-Control-Panel-Wizard.png)
 
 ---
 
@@ -81,7 +81,7 @@ On SALES01:
 gpupdate /force
 ```
 
-![GPUpdate Sales01](screenshots/6-Gpupdate-Sales01.png)
+![GPUpdate Sales01](screenshots/6-Gpudate-Sales01.png)
 
 ---
 
