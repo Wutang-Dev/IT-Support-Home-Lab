@@ -141,7 +141,7 @@ Result:
 - H: drive mapped automatically
 - S: drive not present
 
-![Helpdesk Confirmation](screenshots/10-Confirmation-Helpdesk-worked .png)
+![Helpdesk Confirmation](screenshots/10-Confirmation-Helpdesk-worked.png)
 
 ---
 
