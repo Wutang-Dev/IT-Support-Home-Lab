@@ -97,11 +97,11 @@ Target condition:
 
 - User is a member of security group → `IT\Helpdesk-Users`
 
-![Common Config Helpdesk](screenshots/5-Common-Config-Helpdesk.png)
+![Common Config Helpdesk](screenshots/5-Common-Config-Helpesk.png)
 
 Final GPO configuration:
 
-![Drive Mapping GPO Complete](screenshots/6-Drive-Mapped-GPO-Complete.png)
+![Drive Mapping GPO Complete](screenshots/6-drive-mapped-gpo-complete.png)
 
 ---
 
@@ -114,7 +114,7 @@ Executed:
 gpupdate /force
 
 
-![GPUpdate Sales01](screenshots/7-Gpupdate-Force-Sales01.png)
+![GPUpdate Sales01](screenshots/7-Gpupdate-force-Sales01.png)
 
 Result:
 
@@ -134,14 +134,14 @@ Executed:
 gpupdate /force
 
 
-![GPUpdate Helpdesk User](screenshots/9-Gpupdate-Force-Helpdesk-User.png)
+![GPUpdate Helpdesk User](screenshots/9-Gpupdate-force-Helpdesk-User.png)
 
 Result:
 
 - H: drive mapped automatically
 - S: drive not present
 
-![Helpdesk Confirmation](screenshots/10-Confirmation-Helpdesk-worked.png)
+![Helpdesk Confirmation](screenshots/10-Confirmation-Helpdesk-worked .png)
 
 ---
 
@@ -193,7 +193,7 @@ This lab builds on:
 - NTFS permission alignment  
 - Previous GPO deployment labs  
 
-The environment now reflects a real-world enterprise file access architecture.
+
 
 
 
